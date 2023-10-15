@@ -33,14 +33,14 @@ h1 {
   color: #f0f0f0;
   transition: all 0.4s ease-in;
 }
-
+/* changed margin-bottom to 50rem to move slider up*/
 .toggle-switch {
   position: relative;
   display: inline-block;
   width: 3.75rem;
   height: 2.13rem;
-  margin-bottom: 0.63rem;
-  margin-inline: auto;
+  margin-bottom: 50rem;
+  margin-inline: center;
 }
 
 .toggle-switch input {
@@ -85,16 +85,15 @@ input:checked + .slider:before {
   transform: translateX(1.63rem);
 }
 
-
 .container {
-  width: 100%;
-  height: 100vh;
-  background-image: url(sunset-over-water.jpg);
+
+  min-height: calc(100vh - 4.25rem);
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .card {
@@ -160,7 +159,7 @@ position: relative;
 content: "";
 opacity: 0;
 transition: all 0.2s;
-height: 2px;
+height: 2rem;
 width: 100%;
 background-color: whitesmoke;
 position: absolute;
@@ -168,26 +167,16 @@ bottom: 0;
 left: 0;
 }
 
-.nav-link:hover::after {
-opacity: 1;
-}
 
-.nav__content {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1.5rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
+/* changed gap: to 6.5rem and centered the slider*/
 ul {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 6.5rem;
   list-style: none;
   transition: left 0.3s;
 }
+
 
 ul li a {
   padding: 0.5rem 1rem;
@@ -196,6 +185,7 @@ ul li a {
   font-weight: 600;
   color: white;
   transition: 0.3;
+  
 }
 
 .icon a {
